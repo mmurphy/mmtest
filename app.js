@@ -7,7 +7,7 @@ var shouldFail = false;
 const myHost = process.env.HOSTNAME;
 
 function log(str) {
-  const when = (new Date()).toUTCString();
+  const when = (new Date()).toISOString();
   console.log(`${when}: ${myHost}: ${str}`);
 }
 

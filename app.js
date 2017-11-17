@@ -25,6 +25,8 @@ app.get('/sys/fix', (req, res) => {
     'status': 'ok'
   })
 });
-app.get('/', (req, res) => res.send(`Hello World! from ${process.env.HOSTNAME`}));
+app.get('/', (req, res) => {
+  res.send(`Hello World! from ${process.env.HOSTNAME}`);
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
